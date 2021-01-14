@@ -4,11 +4,11 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
-
+    John Newell - Developer - hamfingered.com
 # THANKS
 
     <name>
-
+    Karen Newell for having the idea in the first place.
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
