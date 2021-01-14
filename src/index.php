@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <meta name="description" content="">
+  <meta name="description" content="Dragon Story Game">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
+  <meta property="og:title" content="Dragon Story">
+  <meta property="og:type" content="Dragon Game">
+  <meta property="og:url" content="dragonstory.hamfingered.com">
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
@@ -26,7 +26,7 @@
 
   <!-- Add your site or application content here -->
   <p>Welcome to my dragon website!</p>
-  <?php phpinfo(); ?>
+
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="js/app.js"></script>
 
