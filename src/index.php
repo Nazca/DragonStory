@@ -26,7 +26,7 @@
 
   <!-- Add your site or application content here -->
   <p>Welcome to my dragon website!</p>
-  <?php phpinfo(); ?>
+  <p>This is Johns Branch!</p>
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
   <script src="js/app.js"></script>
 
