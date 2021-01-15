@@ -2,7 +2,7 @@
   <footer id="footer">
     <section>
       <h2>Inspired by my Wife.</h2>
-      <p>I strait up asked my wife for a good idea and she strait up gave me on.  Dragon Story to me is a fun game that is Easy to learn but hard to master.  A child can get an egg, feed it and raise it, play with it, do activities with it and generally have fun with a cool dragon.  For the adult crowd it's a dragon breeding game.  The dragons all have genetics and breeding will take some time.  I love you wife and thank you for the great idea.</p>
+      <p>I strait up asked my wife for a good idea and she gave me one.  Dragon Story to me is a fun game that is Easy to learn but hard to master.  A child can get an egg, feed it, raise it, play with it, do activities with it, and generally have fun with a cool dragon.  For the adult crowd it's a dragon breeding game.  The dragons all have genetics and breeding will take some time.  I love you wife and thank you for the great idea.</p>
       <p><a href="patchNotes.php">Patch Notes</a></p>
       <!--
       //Learn more button that can be used later to reference a thanks to my wife karen in some way.
