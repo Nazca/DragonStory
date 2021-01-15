@@ -24,6 +24,10 @@ class InputController {
     $email = $this->clean($email);
     $password = $this->clean($password);
 
+    if (!($password) || !($email)){
+      return false ;
+    }
+
     //Notify the GameManager we want to log in with the information we have now cleaned
 
     //we notify the game manager by instantiating it here and calling a method for the command we want to run.

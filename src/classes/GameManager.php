@@ -40,10 +40,17 @@ class GameManager {
 
     if ($email == null || $password == null){
       //there was some sort of error with their login information, return false
-      echo "<br />No email or password was sent";
+      echo "<br />No email or password was sent to the GameManager";
       return false ;
     }else{
       //check their login information in the sql database
+      //check code
+
+      //basic code to set a userid in the session
+      //beware this makes every one me
+      $this->userid = 1 ;
+      $_SESSION['userid'] = 1 ;
+
       return true;
     }
 

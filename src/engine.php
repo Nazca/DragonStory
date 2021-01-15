@@ -39,7 +39,11 @@ $inputController = new InputController();
 
 if ($inputController->login($_POST['email'], $_POST['password']) == true){
   echo "we logged in";
+  echo "<br />" . $_SESSION['userid'];
 }else{
   echo "log in failed";
+  echo "<br />We don't have a session userid to echo";
 }
+
+
 ?>
