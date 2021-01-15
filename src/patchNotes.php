@@ -31,7 +31,7 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+								<center><span class="image main"><a href="/">Home</a></span></center>
 								<h2>Alpha 0.01</h2>
 								<p>Added patch notes section to better track changes and versioning between sites.</p>
 
