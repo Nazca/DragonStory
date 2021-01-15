@@ -36,7 +36,8 @@
 								<p>
 									<ul>
 										<li>Updated Version to 0.01001 in patch notes, package, and index.php</li>
-										<li>Began working on registering as a new user.</li>
+										<li>Updated node-forge</li>
+										<li>Updated Yargs-Parser</li>
 									</ul>
 								</p>
 
