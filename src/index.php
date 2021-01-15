@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+
   <meta name="description" content="Get a dragon egg and raise your own dragon in Dragon Story">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
   <meta property="og:title" content="Dragon Story">
   <meta property="og:type" content="Raise your own Dragon game">
+
   <meta property="og:url" content="dragonstory.hamfingered.com">
   <meta property="og:image" content="">
 
@@ -227,6 +229,7 @@
 
 
 <!-- END my site or application content -->
+
 
 
   <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
