@@ -101,7 +101,7 @@
   								</ul>
   								<footer class="major">
   									<ul class="actions special">
-  										<li><a href="generic.html" class="button">Shop</a></li>
+  										<li><a href="hatchery.php" class="button">Shop</a></li>
   									</ul>
   								</footer>
   							</section>
@@ -137,7 +137,7 @@
   								<p class="content">Three Dragon Eggs were found, one red, one yellow, one blue.  After study'ing them for years it was decided that the Red be hatched male and the yellow and blue be hatched female.  Dragons born a boy are incubated in a hotter temperature than dragons born female in a more mild climate.  In the wild, an alpha male dragon would choose a strong egg and the males would take turns heating it with their fire.  The dragon in that egg would be born male.  Today we do it with an oven.</p>
   								<footer class="major">
   									<ul class="actions special">
-  										<li>Name your Dragon: <input type="text" /><br /><a href="generic.html" class="button">Register</a></li>
+  										<li>Name your Dragon: <input type="text" /><br /><a href="register.php" class="button">Register</a></li>
   									</ul>
   								</footer>
   							</section>
