@@ -5,7 +5,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>0.01001</title>
+  <title>0.01002</title>
 
   <meta name="description" content="Get a dragon egg and raise your own dragon in Dragon Story">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
