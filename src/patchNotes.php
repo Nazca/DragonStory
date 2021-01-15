@@ -40,6 +40,8 @@
 										<li>Added a link to live in the application</li>
 										<li>Moved link to patch notes from main navigation to footer.</li>
 										<li>Updated generic.php</li>
+										<li>Updated docs (added readme.md)</li>
+										<li>Created engine.php for user interaction and view of the gamestate.</li>
 
 									</ul>
 								</p>
