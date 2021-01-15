@@ -7,4 +7,6 @@
 //if we have log in information lets give that to the InputController so that we may clean it, modify the game state, and display it to the users
 
 //if they are not logged in and we have no input lets redirect to index.php
+
+session_start(); //this will allow us to use the session to see if a user is logged in or not.
  ?>
