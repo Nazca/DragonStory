@@ -13,6 +13,29 @@ require_once("classes/InputController.php");
 
 session_start(); //this will allow us to use the session to see if a user is logged in or not.
 
+$loggedIn; //set a flag to see whether or not we are logged in.
 
+
+
+if (isset($_SESSION['userid']) && $_SESSION['userid'] != null && $_SESSION['userid'] != 0){
+  //We are definitely logged in!
+  $loggedIn = true ;
+}else{
+  //we are definitely not logged in.
+  $loggedIn = false ;
+}
+
+
+
+//now we can do two seperate things based on our flag of $loggedIn
 var_dump($_POST);
+
+
+//invoke the input Controller
+
+$inputController = new InputController();
+
+//method login() of class InputController expects arguments email and password
+
+$inputController->login($_POST['email'], $_POST['password']);
 ?>

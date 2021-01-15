@@ -11,28 +11,25 @@ class InputController {
   //The first type of input we are going to get is registration information.
   //Lets set some possible properties for user input from there.
 
+  //methods
 
-
-
-
-  //get_class_methods
+  //cleans user input making it SQL safe
+  private function clean($input){
+    //clean some sort of input from the users
+    return $input ;
+  }
   //we need a method that allows us to communicate with the GameManager class
-  function login($email, $password, $screenName){
+  public function login($email, $password){
     //Lets gather user input, clean it, then send it to the game manager.
-    $email = clean($email);
-    $password = clean($password);
-    $screenName = clean($screenName);
+    $email = $this->clean($email);
+    $password = $this->clean($password);
 
     //Notify the GameManager we want to log in with the information we have now cleaned
 
   }
 
 
-  //cleans user input making it SQL safe
-  function clean($input){
-    //clean some sort of input from the users
-    return $input ;
-  }
+
 
 }
  ?>
