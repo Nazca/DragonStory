@@ -44,8 +44,8 @@
   					<header id="header" class="alt">
   						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
   						<h1>Dragon Story</h1>
-  						<p>Welcome to my dragon website!<br />
-  						built by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
+  						<p>Raise your very own Dragon!<br />
+  						Alpha 0.01 built by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
   					</header>
 
   				<!-- Nav -->
