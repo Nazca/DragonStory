@@ -23,7 +23,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="/">Dragon Story</a></h1>
-						<p>Alpha 0.01002</p>
+						<p>Alpha 0.01003</p>
 					</header>
 
 				<!-- Main -->
