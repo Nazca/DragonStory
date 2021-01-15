@@ -3,9 +3,9 @@ user sends login information from index.php or login.php
 
 This information is sent by post to engine.php which then invokes the inputController to handle that input information.
 
-engine.php should do three things, check to see if a user is logged in.
+engine.php should do the following things
 
-It will do this as long as $_SESSION['userid'] != null || 0
+It will do this as long as $_SESSION['userid'] != null || $_SESSION['userid'] != 0
 
 If a user is logged in and there is no input it displays the gamestate on the home page.
 If a user is logged in and there is input it should pass that information to the InputController for cleaning.
