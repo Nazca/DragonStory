@@ -156,7 +156,7 @@
                      calling the classes for checking the users info and returning a successful log in or not.
                     -->
                     <p>
-                      <form action="login.php" method="POST" />
+                      <form action="engine.php" method="POST" />
                       <table>
                         <tr>
                           <td>Email:</td><td><input type="text" name="email" /></td>
@@ -168,7 +168,7 @@
                           <td><footer class="major">
           									<ul class="actions special">
           										<a href="register.php" class="button">Register</a></td><td>
-          										<input type="submit" value="Submit" class="button primary" />
+          										<input type="submit" value="Login" class="button primary" />
           									</ul>
           								</footer></td>
                         </tr>

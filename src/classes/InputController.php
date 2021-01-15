@@ -17,7 +17,7 @@ class InputController {
 
   //get_class_methods
   //we need a method that allows us to communicate with the GameManager class
-  function login($this->$email, $password, $screenName){
+  function login($email, $password, $screenName){
     //Lets gather user input, clean it, then send it to the game manager.
     $email = clean($email);
     $password = clean($password);

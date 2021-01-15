@@ -21,7 +21,7 @@ This class will access the SQL database with a seperate Data Access Object proba
 class GameManager {
   //properties
   public $user ; //the database id of the currently logged in user. 0 or null if no user is logged in.
-  public $username //String username to show what user is logged in;
+  public $username; //String username to show what user is logged in;
 
 
   //get_class_methods

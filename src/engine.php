@@ -1,4 +1,7 @@
 <?php
+require_once("classes/DisplayManager.php");
+require_once("classes/GameManager.php");
+require_once("classes/InputController.php");
 //this is the main file called when the user is viewing, giving input, or otherwise monitering the gamestate.
 
 //it's possible that we've ended up here without sending any log in information.
@@ -9,4 +12,7 @@
 //if they are not logged in and we have no input lets redirect to index.php
 
 session_start(); //this will allow us to use the session to see if a user is logged in or not.
- ?>
+
+
+var_dump($_POST);
+?>
