@@ -36,7 +36,7 @@
 								<p>
 									<ul>
 										<li>Added patch notes section to better track changes and versioning between sites.</li>
-										<li></li>
+										<li>Fixed mark up in patch notes section</li>
 									</ul>
 								</p>
 
@@ -44,7 +44,7 @@
 								<p>
 								<ul>
 									<li>Main Engine MVC model design and installed with a lightweight template and sql database.</li>
-									<li></li>
+
 								</ul>
 								</p>
 							</section>
