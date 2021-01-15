@@ -5,7 +5,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>0.01001</title>
 
   <meta name="description" content="Get a dragon egg and raise your own dragon in Dragon Story">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -48,7 +48,7 @@
   						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
   						<h1>Dragon Story</h1>
   						<p>Raise your very own Dragon!<br />
-  						Alpha 0.01 built by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
+  						Dragon Story owned and designed by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
   					</header>
 
   				<!-- Nav -->
