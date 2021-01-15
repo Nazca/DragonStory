@@ -20,11 +20,38 @@ This class will access the SQL database with a seperate Data Access Object proba
 */
 class GameManager {
   //properties
-  public $userid ; //the database id of the currently logged in user. 0, null, or unset if no user is logged in.
+  public $userid ;
+  public $screenName ; //the Screen name of the currently logged in player
 
 
 
   //get_class_methods
+
+  private function getUID(){
+    if (isset($_SESSION['userid'])){
+      $this->$userid = $_SESSION['userid'];
+    }
+
+  }
+
+  public function login($email, $password){
+    //this function should check this cleaned information against the databse to see if the user exists.
+    //if the user exists it should invoke the DisplayManager with a command to display the home screen with the current logged in user's id as a property.
+
+    if ($email == null || $password == null){
+      //there was some sort of error with their login information, return false
+      echo "<br />No email or password was sent";
+      return false ;
+    }else{
+      //check their login information in the sql database
+      return true;
+    }
+
+  }
+
+  private function home(){
+    //display the home screen for the player with user id $_SESSION['userid'];
+  }
 
 }
  ?>

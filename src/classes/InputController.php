@@ -26,6 +26,17 @@ class InputController {
 
     //Notify the GameManager we want to log in with the information we have now cleaned
 
+    //we notify the game manager by instantiating it here and calling a method for the command we want to run.
+    //the method names should be the same from InputController to GameManager
+
+    $GameManager = new GameManager();
+
+    if ($GameManager->login($email, $password) == true){
+      return true ;
+    }else{
+      return false ;
+    }
+
   }
 
 

@@ -28,7 +28,7 @@ if (isset($_SESSION['userid']) && $_SESSION['userid'] != null && $_SESSION['user
 
 
 //now we can do two seperate things based on our flag of $loggedIn
-var_dump($_POST);
+//var_dump($_POST);
 
 
 //invoke the input Controller
@@ -37,5 +37,9 @@ $inputController = new InputController();
 
 //method login() of class InputController expects arguments email and password
 
-$inputController->login($_POST['email'], $_POST['password']);
+if ($inputController->login($_POST['email'], $_POST['password']) == true){
+  echo "we logged in";
+}else{
+  echo "log in failed";
+}
 ?>
