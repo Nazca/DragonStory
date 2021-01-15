@@ -11,6 +11,8 @@ By default, HTML5 Boilerplate provides two `html` pages:
 
 ## `index.html`
 
+index.html was renamed to index.php and has had the css, js, and html from the stellar template melded in with it.  404.html has so far not been worked on.
+
 ### The `no-js` Class
 
 The `no-js` class is provided in order to allow you to more easily and

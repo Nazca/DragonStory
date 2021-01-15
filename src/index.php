@@ -1,10 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="English">
-
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
   <title></title>
-  <meta name="description" content="">
+  <meta name="description" content="Get a dragon egg and raise your own dragon in Dragon Story">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
   <meta property="og:title" content="Dragon Story">
@@ -41,19 +40,19 @@
 
   				<!-- Header -->
   					<header id="header" class="alt">
-  						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-  						<h1>Stellar</h1>
-  						<p>Just another free, fully responsive site template<br />
-  						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+  						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+  						<h1>Dragon Story</h1>
+  						<p>Welcome to my dragon website!<br />
+  						built by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
   					</header>
 
   				<!-- Nav -->
   					<nav id="nav">
   						<ul>
-  							<li><a href="#intro" class="active">Introduction</a></li>
-  							<li><a href="#first">First Section</a></li>
-  							<li><a href="#second">Second Section</a></li>
-  							<li><a href="#cta">Get Started</a></li>
+  							<li><a href="#intro" class="active">Top</a></li>
+  							<li><a href="#first">Store</a></li>
+  							<li><a href="#second">Register</a></li>
+  							<li><a href="#cta">Play</a></li>
   						</ul>
   					</nav>
 
@@ -65,44 +64,44 @@
   								<div class="spotlight">
   									<div class="content">
   										<header class="major">
-  											<h2>Ipsum sed adipiscing</h2>
+  											<h2>Dragon Story</h2>
   										</header>
-  										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-  										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-  										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-  										<ul class="actions">
-  											<li><a href="generic.html" class="button">Learn More</a></li>
-  										</ul>
+  										<p>A game where you raise your dragon!</p>
+  										<!--
+                        <ul class="actions">
+  											    <li><a href="register.php" class="button">Register</a></li>
+  										  </ul>
+                      -->
   									</div>
-  									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+  									<span class="image"><img src="images/egg.png" alt="" /></span>
   								</div>
   							</section>
 
   						<!-- First Section -->
   							<section id="first" class="main special">
   								<header class="major">
-  									<h2>Magna veroeros</h2>
+  									<h2>Dragon Hatchery</h2>
   								</header>
   								<ul class="features">
   									<li>
   										<span class="icon solid major style1 fa-code"></span>
-  										<h3>Ipsum consequat</h3>
-  										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+  										<h3>Western Dragon</h3>
+  										<p>Hearty, tough, and strong flyers - western dragons are the dragons for those who want mounts.</p>
   									</li>
   									<li>
   										<span class="icon major style3 fa-copy"></span>
-  										<h3>Amed sed feugiat</h3>
-  										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+  										<h3>Northern Dragon</h3>
+  										<p>Sleek, slender, and fast northern dragons are often used to race!</p>
   									</li>
   									<li>
   										<span class="icon major style5 fa-gem"></span>
-  										<h3>Dolor nullam</h3>
-  										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+  										<h3>Eastern Dragon</h3>
+  										<p>Eastern Dragons are small, calm, cuddly, cute, and friendly!  Get yours today!</p>
   									</li>
   								</ul>
   								<footer class="major">
   									<ul class="actions special">
-  										<li><a href="generic.html" class="button">Learn More</a></li>
+  										<li><a href="generic.html" class="button">Shop</a></li>
   									</ul>
   								</footer>
   							</section>
@@ -110,36 +109,35 @@
   						<!-- Second Section -->
   							<section id="second" class="main special">
   								<header class="major">
-  									<h2>Ipsum consequat</h2>
-  									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-  									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+  									<h2>Register</h2>
+  									<p>Register an account on this site to raise your new magical best friend! <br />Will yours be cute and cuddly or big and strong?<br />Do you have what it takes to become a Dragon Master?<br />Get one today.</p>
   								</header>
   								<ul class="statistics">
   									<li class="style1">
   										<span class="icon solid fa-code-branch"></span>
-  										<strong>5,120</strong> Etiam
+  										<strong>0</strong> Dragon Masters
   									</li>
   									<li class="style2">
   										<span class="icon fa-folder-open"></span>
-  										<strong>8,192</strong> Magna
+  										<strong>0</strong> Eggs Hatched
   									</li>
   									<li class="style3">
   										<span class="icon solid fa-signal"></span>
-  										<strong>2,048</strong> Tempus
+  										<strong>0</strong> Dragons Raised
   									</li>
   									<li class="style4">
   										<span class="icon solid fa-laptop"></span>
-  										<strong>4,096</strong> Aliquam
+  										<strong>0</strong> Dragons Adopted
   									</li>
   									<li class="style5">
   										<span class="icon fa-gem"></span>
-  										<strong>1,024</strong> Nullam
+  										<strong>0</strong> Dragon Deaths
   									</li>
   								</ul>
-  								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+  								<p class="content">Three Dragon Eggs were found, one red, one yellow, one blue.  After study'ing them for years it was decided that the Red be hatched male and the yellow and blue be hatched female.  Dragons born a boy are incubated in a hotter temperature than dragons born female in a more mild climate.  In the wild, an alpha male dragon would choose a strong egg and the males would take turns heating it with their fire.  The dragon in that egg would be born male.  Today we do it with an oven.</p>
   								<footer class="major">
   									<ul class="actions special">
-  										<li><a href="generic.html" class="button">Learn More</a></li>
+  										<li>Name your Dragon: <input type="text" /><br /><a href="generic.html" class="button">Register</a></li>
   									</ul>
   								</footer>
   							</section>
@@ -147,16 +145,35 @@
   						<!-- Get Started -->
   							<section id="cta" class="main special">
   								<header class="major">
-  									<h2>Congue imperdiet</h2>
-  									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-  									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+  									<h2>Log In</h2>
+  									<!--
+                     This is a fairly ugly table should work and look as intended.
+
+                     It's designed to take user login input and POST it to login.php which will handle
+                     calling the classes for checking the users info and returning a successful log in or not.
+                    -->
+                    <p>
+                      <form action="login.php" method="POST" />
+                      <table>
+                        <tr>
+                          <td>Email:</td><td><input type="text" name="email" /></td>
+                        </tr>
+                        <tr>
+                          <td>Password:</td><td><input type="password" name="password" /></td>
+                        </tr>
+                        <tr>
+                          <td><footer class="major">
+          									<ul class="actions special">
+          										<a href="register.php" class="button">Register</a></td><td>
+          										<input type="submit" value="Submit" class="button primary" />
+          									</ul>
+          								</footer></td>
+                        </tr>
+                      </table>
+                    </form>
+                    </p>
   								</header>
-  								<footer class="major">
-  									<ul class="actions special">
-  										<li><a href="generic.html" class="button primary">Get Started</a></li>
-  										<li><a href="generic.html" class="button">Learn More</a></li>
-  									</ul>
-  								</footer>
+
   							</section>
 
   					</div>
@@ -164,21 +181,21 @@
   				<!-- Footer -->
   					<footer id="footer">
   						<section>
-  							<h2>Aliquam sed mauris</h2>
-  							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+  							<h2>Inspired by my Wife.</h2>
+  							<p>I strait up asked my wife for a good idea and she strait up gave me on.  Dragon Story to me is a fun game that is Easy to learn but hard to master.  A child can get an egg, feed it and raise it, play with it, do activities with it and generally have fun with a cool dragon.  For the adult crowd it's a dragon breeding game.  The dragons all have genetics and breeding will take some time.</p>
   							<ul class="actions">
   								<li><a href="generic.html" class="button">Learn More</a></li>
   							</ul>
   						</section>
   						<section>
-  							<h2>Etiam feugiat</h2>
+  							<h2>Dragon Story</h2>
   							<dl class="alt">
   								<dt>Address</dt>
-  								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+  								<dd>Rancho Cucamonga, CA 91730 &bull; USA</dd>
   								<dt>Phone</dt>
-  								<dd>(000) 000-0000 x 0000</dd>
+  								<dd>(432) 208-4053</dd>
   								<dt>Email</dt>
-  								<dd><a href="#">information@untitled.tld</a></dd>
+  								<dd>newell.john.k@gmail.com</dd>
   							</dl>
   							<ul class="icons">
   								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
@@ -202,7 +219,7 @@
   			<script src="assets/js/util.js"></script>
   			<script src="assets/js/main.js"></script>
 
-  	
+
 
 
 
