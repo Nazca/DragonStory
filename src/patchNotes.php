@@ -33,6 +33,16 @@
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
 
+								<h2>Alpha 0.01003 (date)</h2>
+								<p>
+									<ul>
+										<li>Updated Version to 0.01003 in patch notes, package.  Version identifier in index.php removed.</li>
+										<li>Removed unfunctional counters in index.php</li>
+
+
+									</ul>
+								</p>
+
 								<h2>Alpha 0.01002 (1/15/2021)</h2>
 								<p>
 									<ul>

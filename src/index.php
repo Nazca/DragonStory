@@ -112,7 +112,7 @@
   									<h2>Register</h2>
   									<p>Register an account on this site to raise your new magical best friend! <br />Will yours be cute and cuddly or big and strong?<br />Do you have what it takes to become a Dragon Master?<br />Get one today.</p>
   								</header>
-  								<ul class="statistics">
+  							<!--	<ul class="statistics">
   									<li class="style1">
   										<span class="icon solid fa-code-branch"></span>
   										<strong>0</strong> Dragon Masters
@@ -133,7 +133,7 @@
   										<span class="icon fa-gem"></span>
   										<strong>0</strong> Dragon Deaths
   									</li>
-  								</ul>
+  								</ul> -->
   								<p class="content">Three Dragon Eggs were found, one red, one yellow, one blue.  After study'ing them for years it was decided that the Red be hatched male and the yellow and blue be hatched female.  Dragons born a boy are incubated in a hotter temperature than dragons born female in a more mild climate.  In the wild, an alpha male dragon would choose a strong egg and the males would take turns heating it with their fire.  The dragon in that egg would be born male.  Today we do it with an oven.</p>
   								<footer class="major">
   									<ul class="actions special">
