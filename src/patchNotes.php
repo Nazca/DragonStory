@@ -31,12 +31,13 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<center><span class="image main"><a href="/">Home</a></span></center>
+								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
 
 								<h2>Alpha 0.01002</h2>
 								<p>
 									<ul>
 										<li>Updated Version to 0.01002 in patch notes, package, and index.php</li>
+										<li>Added a link to live in the application</li>
 
 									</ul>
 								</p>
