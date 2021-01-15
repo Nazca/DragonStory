@@ -23,7 +23,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="/">Dragon Story</a></h1>
-						<p>Alpha 0.01</p>
+						<p>Alpha 0.01001</p>
 					</header>
 
 				<!-- Main -->
@@ -32,6 +32,14 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a></span></center>
+								<h2>Alpha 0.01001</h2>
+								<p>
+									<ul>
+										<li>Updated Version to 0.01001 in patch notes, package, and index.php</li>
+										<li>Began working on registering as a new user.</li>
+									</ul>
+								</p>
+
 								<h2>Alpha 0.01</h2>
 								<p>
 									<ul>
