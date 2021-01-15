@@ -25,4 +25,6 @@ A red Dragon with genes Rg would be the result.
 
 A dragon born Rg with a dominant and a recessive has a 10% chance to mutate into BV BV  a blue violate dragon.
 
-An image reference can be found at dragonstory.hamfingered.com/images/color-wheel.png
+An image reference can be found at dragonstory.hamfingered.com/images/color-wheel.png  This makes this 3rd generation of colors the most rare, most recessive, and most valuable.
+
+This system should be followed for all features of the dragons.
