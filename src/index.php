@@ -51,7 +51,7 @@
   						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
   						<h1>Dragon Story</h1>
   						<p>Raise your very own Dragon!<br />
-                <small>Alpha 0.01</small><br />
+                <small>Alpha 0.1</small><br />
   						Dragon Story owned and designed by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
   					</header>
 

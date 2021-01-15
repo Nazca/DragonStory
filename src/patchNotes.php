@@ -23,7 +23,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="/">Dragon Story</a></h1>
-						<p>Alpha 0.01003</p>
+						<p>Alpha 0.10003</p>
 					</header>
 
 				<!-- Main -->
@@ -33,7 +33,7 @@
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
 
-								<h2>Alpha 0.01003 (date)</h2>
+								<h2>Alpha 0.10003 (date)</h2>
 								<p>
 									<ul>
 										<li>Updated Version to 0.01003 in patch notes, package.  Version identifier in index.php removed.</li>
