@@ -86,17 +86,17 @@
   								</header>
   								<ul class="features">
   									<li>
-  										<h2>Red Dragon image.</h2>
+  										<h2><img src="images/redDragon.jpg" width="250" height="250" /></h2>
   										<h3>Western Dragon</h3>
   										<p>Hearty, tough, and strong flyers - western dragons are the dragons for those who want mounts.</p>
   									</li>
   									<li>
-  										<h2>Blue Dragon image.</h2>
+  										<h2><img src="images/blueDragon.jpg" width="250" height="250" /></h2>
   										<h3>Northern Dragon</h3>
   										<p>Sleek, slender, and fast northern dragons are often used to race!</p>
   									</li>
   									<li>
-  										<h2>Yellow Dragon image.</h2>
+  										<h2><img src="images/yellowDragon.jpg" width="250" height="200" /></h2>
   										<h3>Eastern Dragon</h3>
   										<p>Eastern Dragons are small, calm, cuddly, cute, and friendly!  Get yours today!</p>
   									</li>
@@ -207,7 +207,7 @@
   								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
   							</ul>
   						</section>
-  						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+  						<p class="copyright">&copy; John Newell's Dragon Story. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
   					</footer>
 
   			</div>
