@@ -56,7 +56,6 @@
   						<ul>
   							<li><a href="#intro" class="active">Top</a></li>
   							<li><a href="#first">Hatchery</a></li>
-                <li><a href="patchNotes.php">Patch Notes</a></li>
   							<li><a href="#second">Register</a></li>
   							<li><a href="#cta">Play</a></li>
   						</ul>
@@ -184,6 +183,7 @@
   						<section>
   							<h2>Inspired by my Wife.</h2>
   							<p>I strait up asked my wife for a good idea and she strait up gave me on.  Dragon Story to me is a fun game that is Easy to learn but hard to master.  A child can get an egg, feed it and raise it, play with it, do activities with it and generally have fun with a cool dragon.  For the adult crowd it's a dragon breeding game.  The dragons all have genetics and breeding will take some time.  I love you wife and thank you for the great idea.</p>
+                <p><a href="patchNotes.php">Patch Notes</a></p>
   							<ul class="actions">
   								<li><a href="generic.html" class="button">Learn More</a></li>
   							</ul>

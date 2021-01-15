@@ -38,6 +38,7 @@
 									<ul>
 										<li>Updated Version to 0.01002 in patch notes, package, and index.php</li>
 										<li>Added a link to live in the application</li>
+										<li>Moved link to patch notes from main navigation to footer.</li>
 
 									</ul>
 								</p>
