@@ -33,10 +33,20 @@
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a></span></center>
 								<h2>Alpha 0.01</h2>
-								<p>Added patch notes section to better track changes and versioning between sites.</p>
+								<p>
+									<ul>
+										<li>Added patch notes section to better track changes and versioning between sites.</li>
+										<li></li>
+									</ul>
+								</p>
 
 								<h2>Alpha 0.00</h2>
-								<p>Main Engine MVC model design and installed with a lightweight template and sql database.</p>
+								<p>
+								<ul>
+									<li>Main Engine MVC model design and installed with a lightweight template and sql database.</li>
+									<li></li>
+								</ul>
+								</p>
 							</section>
 
 					</div>
