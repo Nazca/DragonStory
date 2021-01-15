@@ -60,7 +60,7 @@
   						<ul>
   							<li><a href="#intro" class="active">Top</a></li>
   							<li><a href="#first">Hatchery</a></li>
-  							<li><a href="#second">Register</a></li>
+  							<li><a href="register.php">Register</a></li>
   							<li><a href="#cta">Play</a></li>
   						</ul>
   					</nav>
