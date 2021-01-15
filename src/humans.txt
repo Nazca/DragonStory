@@ -5,11 +5,21 @@
 
     <name> -- <role> -- <twitter>
     John Newell - Developer - hamfingered.com
+    Karen Newell - Idea Haver - justlikenewell.com
+
 # THANKS
 
     <name>
     Karen Newell for having the idea in the first place.
+
+
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
     Apache Server Configs, Modernizr, Normalize.css, main.css, Parcel
+
+    htlm5 boilerplate
+
+    Stellar Template by AJ
+
+    MVC Model PHP code by John Newell www.hamfingered.com

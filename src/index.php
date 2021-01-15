@@ -1,4 +1,7 @@
 <!doctype html>
+<!--
+	John Newell's Dragon Story
+-->
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -52,7 +55,8 @@
   					<nav id="nav">
   						<ul>
   							<li><a href="#intro" class="active">Top</a></li>
-  							<li><a href="#first">Store</a></li>
+  							<li><a href="#first">Hatchery</a></li>
+                <li><a href="patchNotes.php">Patch Notes</a></li>
   							<li><a href="#second">Register</a></li>
   							<li><a href="#cta">Play</a></li>
   						</ul>
@@ -69,11 +73,6 @@
   											<h2>Dragon Story</h2>
   										</header>
   										<p>A game where you raise your dragon!</p>
-  										<!--
-                        <ul class="actions">
-  											    <li><a href="register.php" class="button">Register</a></li>
-  										  </ul>
-                      -->
   									</div>
   									<span class="image"><img src="images/egg.png" alt="" /></span>
   								</div>
