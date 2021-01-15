@@ -84,17 +84,17 @@
   								</header>
   								<ul class="features">
   									<li>
-  										<span class="icon solid major style1 fa-code"></span>
+  										<h2>Red Dragon image.</h2>
   										<h3>Western Dragon</h3>
   										<p>Hearty, tough, and strong flyers - western dragons are the dragons for those who want mounts.</p>
   									</li>
   									<li>
-  										<span class="icon major style3 fa-copy"></span>
+  										<h2>Blue Dragon image.</h2>
   										<h3>Northern Dragon</h3>
   										<p>Sleek, slender, and fast northern dragons are often used to race!</p>
   									</li>
   									<li>
-  										<span class="icon major style5 fa-gem"></span>
+  										<h2>Yellow Dragon image.</h2>
   										<h3>Eastern Dragon</h3>
   										<p>Eastern Dragons are small, calm, cuddly, cute, and friendly!  Get yours today!</p>
   									</li>
@@ -182,7 +182,7 @@
   					<footer id="footer">
   						<section>
   							<h2>Inspired by my Wife.</h2>
-  							<p>I strait up asked my wife for a good idea and she strait up gave me on.  Dragon Story to me is a fun game that is Easy to learn but hard to master.  A child can get an egg, feed it and raise it, play with it, do activities with it and generally have fun with a cool dragon.  For the adult crowd it's a dragon breeding game.  The dragons all have genetics and breeding will take some time.</p>
+  							<p>I strait up asked my wife for a good idea and she strait up gave me on.  Dragon Story to me is a fun game that is Easy to learn but hard to master.  A child can get an egg, feed it and raise it, play with it, do activities with it and generally have fun with a cool dragon.  For the adult crowd it's a dragon breeding game.  The dragons all have genetics and breeding will take some time.  I love you wife and thank you for the great idea.</p>
   							<ul class="actions">
   								<li><a href="generic.html" class="button">Learn More</a></li>
   							</ul>
