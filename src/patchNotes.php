@@ -33,7 +33,7 @@
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
 
-								<h2>Alpha 0.01002</h2>
+								<h2>Alpha 0.01002 (1/15/2021)</h2>
 								<p>
 									<ul>
 										<li>Updated Version to 0.01002 in patch notes, package, and index.php</li>
@@ -42,6 +42,7 @@
 										<li>Updated generic.php</li>
 										<li>Updated docs (added readme.md)</li>
 										<li>Created engine.php for user interaction and view of the gamestate.</li>
+										<li>Removed name your dragon from the index</li>
 
 									</ul>
 								</p>
