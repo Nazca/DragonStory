@@ -95,10 +95,12 @@ class GameManager {
           //the password is correct
           $_SESSION['userid'] = $id ;
           $displayManager->setError("You have logged in successfully");
+          return true ;
         }else{
           //the password is incorrect
 
           $displayManager->setError("Your information was incorrect.");
+          return false ;
         }
 
       $stmt->close();

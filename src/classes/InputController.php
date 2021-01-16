@@ -32,7 +32,10 @@ class InputController {
       //The fact that get=login is set means we are attempting to log in from index.php
       //we should clean the input, invoke the game manager to access the database
       $gameManager = new GameManager() ;
-      $gameManager->checkLogin($email, $password) ;
+      if ($gameManager->checkLogin($email, $password) === true){
+        header('Location: engine.php');
+        
+      }
 
       return true ;
     }else{

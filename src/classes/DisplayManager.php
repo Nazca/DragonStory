@@ -14,7 +14,18 @@ class DisplayManager {
   private $error ;
 
 
-  //methods
+  //public methods
+  public function displayHome(){
+    $userManager = new UserManager();
+
+    if ($userManager->userLoggedIn() === true){
+      //we are logged in.
+      echo "We are logged in. UID:"  . $_SESSION['userid'];
+      echo "<br /><a href=\"engine.php?logout=true\">Logout</a>";
+      echo "<br /><a href=\"engine.php\">Engine</a>";
+    }
+  }
+
   public function setError($text){
     $_SESSION['error'] = $text ;
   }

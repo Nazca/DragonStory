@@ -28,18 +28,13 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 
 $inputController = new InputController();
 $displayManager  = new DisplayManager();
+$gameManager = new GameManager();
 
 $displayManager->displayError();
 
 
 
-$userManager = new UserManager();
 
-if ($userManager->userLoggedIn() === true){
-  //we are logged in.
-  echo "We are logged in. UID:"  . $_SESSION['userid'];
-  echo "<br /><a href=\"engine.php?logout=true\">Logout</a>";
-}
 
 
 //invoke the input Controller
@@ -48,15 +43,18 @@ if ($userManager->userLoggedIn() === true){
 
 if (isset($_GET['logout'])){
   $inputController->logout() ;
-}
-
-if (isset($_GET['login'])){
+  exit();
+}elseif (isset($_GET['login'])){
   $inputController->login();
+  exit();
+}elseif (isset($_GET['register'])){
+  $inputController->register() ;
+  exit();
+}else{
+
 }
 
-if (isset($_GET['register'])){
-  $inputController->register() ;
-}
+$displayManager->displayHome() ;
 
 
 
