@@ -18,6 +18,10 @@ class UserManager {
     }
   }
 
+  public function userLogIn() {
+    
+  }
+
   public function userLogOut() {
     //we want to log the user out.
     //return true if successful and false if not

@@ -15,6 +15,7 @@ require_once("classes/UserManager.php");
 session_start(); //this will allow us to use the session to see if a user is logged in or not.
 
 $loggedIn; //set a flag to see whether or not we are logged in.
+$inputController = new InputController();
 
 
 
@@ -26,9 +27,8 @@ if ($userManager->userLoggedIn() === true){
   echo "<br /><a href=\"engine.php?logout=true\">Logout</a>";
 }else{
   //we are not logged in
-  echo "We are not logged in."; // . $_SESSION['userid'];
-  echo "<br />We should log in from index.php" ;
-  //echo "<Br /><a href=\"engine.php?login=true\">Login as Nazca</a>";
+  //redirect to index.php by forcing a logout.
+  $inputController->logout() ;
 
 }
 //NOTE: End code removal.
@@ -39,7 +39,7 @@ if ($userManager->userLoggedIn() === true){
 
 //invoke the input Controller
 
-$inputController = new InputController();
+
 
 if (isset($_GET['logout'])){
   $inputController->logout() ;

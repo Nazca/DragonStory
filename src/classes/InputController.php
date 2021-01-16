@@ -22,13 +22,10 @@ class InputController {
   public function login(){
     if (isset($_GET['login'])){
 
-      //instead of just setting the $_SESSION['userid'] to 1 (the first user) we need to request a login from the game manager which will then access the database for us.
-      //$_SESSION['userid'] = 1 ;
+      //The fact that get=login is set means we are attempting to log in from index.php
+      //we should clean the input, invoke the game manager to access the database
 
-      //we need to redirect to engine.php so that we will display updated information.
-      //at this point in time engine.php is displaying debug information as coding has not begun for the DisplayManager
-      //otherwise the display manager would be invoked to display the gamestate.
-      header("Location: engine.php");
+
       return true ;
     }else{
       echo "failed to log in a user.";
@@ -37,16 +34,14 @@ class InputController {
   }
 
   public function logout(){
-    if (isset($_GET['logout']) && $_GET['logout'] == "true"){
+
       $_SESSION['userid'] = 0 ;
       unset($_SESSION['userid']);
 
       //we need to redirect to index.php since they are now logged out.
       header("Location: index.php");
       return true ;
-    }else{
-      return false ;
-    }
+
   }
 
 

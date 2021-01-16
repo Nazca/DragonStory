@@ -157,24 +157,18 @@
                      calling the classes for checking the users info and returning a successful log in or not.
                     -->
                     <p>
-                      <form action="engine.php?login=true" method="POST" />
-                      <table>
-                        <tr>
-                          <td>Email:</td><td><input type="text" name="email" /></td>
-                        </tr>
-                        <tr>
-                          <td>Password:</td><td><input type="password" name="password" /></td>
-                        </tr>
-                        <tr>
-                          <td><footer class="major">
-          									<ul class="actions special">
-          										<a href="register.php" class="button">Register</a></td><td>
-          										<input type="submit" value="Login" class="button primary" />
-          									</ul>
-          								</footer></td>
-                        </tr>
-                      </table>
-                    </form>
+                      <p>
+      									<form action="engine.php?login=true" method="POST" name="command" value="register">
+
+      										<input type="text" name="email" placeholder="Email..." /><br />
+      										<input type="password" name="password" placeholder="Password..." /><br />
+
+      										<input type="submit" name="submit" value="Login" />
+
+
+
+      									</form>
+      								</p>
                     </p>
   								</header>
 
