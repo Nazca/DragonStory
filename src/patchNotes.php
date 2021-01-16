@@ -23,7 +23,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="/">Dragon Story</a></h1>
-						<p>Alpha 0.10003</p>
+						<p>Alpha 0.10004</p>
 					</header>
 
 				<!-- Main -->
@@ -32,6 +32,22 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
+
+								<h1>Alpha 0.10004 (date)</h1>
+								<h3>Patch Notes</h3>
+								<p>
+									<ul>
+										<li>Fixed mysqlnd 500 error</li>
+										<li>Downgraded to php 7.2</li>
+
+								</p>
+								<p>
+									<h3>Known Issues</h3>
+									<ul>
+										<li>None.</li>
+									</ul>
+								</p>
+
 
 								<h1>Alpha 0.10003 (1/16/2021)</h1>
 								<h3>Patch Notes</h3>
