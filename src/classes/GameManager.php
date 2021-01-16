@@ -30,7 +30,7 @@ class GameManager {
 
 
   public function registerNewUser($name, $password){
-    require_once("config.php");
+    require_once("../includes/config.inc.php");
 
     //We need to hash the password with PHP
     $password = password_hash($password, PASSWORD_DEFAULT);
@@ -66,7 +66,7 @@ class GameManager {
     }else{
 
       //check their login information in the sql database
-      require_once("classes/config.php");
+      require_once("../includes/config.inc.php");
       $mysqli = new mysqli($SQLserver, $SQLuser, $SQLpassword, $SQLdatabase);
       if($mysqli->connect_error) {
         exit('Error connecting to database'); //Should be a message a typical user could understand in production
