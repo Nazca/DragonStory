@@ -29,7 +29,7 @@
 								<span class="image main"><img src="" alt="Dragon Hatchery Image" /></span>
 								<h2>Register Here</h2>
 								<p>
-									<form action="engine.php" method="POST" name="command" value="register">
+									<form action="engine.php?register=true" method="POST" name="command" value="register">
 
 										<input type="text" name="email" placeholder="Email..." /><br />
 										<input type="text" name="email2" placeholder="Email again..." /><br />
