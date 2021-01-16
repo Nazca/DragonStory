@@ -45,8 +45,8 @@ if (isset($_GET['logout'])){
   $inputController->logout() ;
   exit();
 }elseif (isset($_GET['login'])){
-  $inputController->login();
-  exit();
+  //$inputController->login();
+  die('Login is now handled procedurally so that the engine can expect a logged in uyser.');
 }elseif (isset($_GET['register'])){
   //$inputController->register() ;
   die('Registration is now handled procedurally so that the engine can expect a logged in user.');
@@ -55,6 +55,8 @@ if (isset($_GET['logout'])){
 }
 
 $displayManager->displayHome() ;
+
+
 
 
 

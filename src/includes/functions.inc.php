@@ -49,7 +49,7 @@ function register(){
     }else{
 
       //check their login information in the sql database
-      require_once("config.inc.php");
+      require("config.inc.php");
       $mysqli = new mysqli($SQLserver, $SQLuser, $SQLpassword, $SQLdatabase);
       if($mysqli->connect_error) {
         exit('Error connecting to database'); //Should be a message a typical user could understand in production
@@ -77,7 +77,7 @@ function register(){
           //the password is correct
           $_SESSION['userid'] = $id ;
 
-          return true ;
+          return $id ;
         }else{
           //the password is incorrect
 
