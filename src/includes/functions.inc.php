@@ -59,32 +59,38 @@ function register(){
       $stmt = $mysqli->prepare("SELECT * FROM users WHERE email = ?");
       $stmt->bind_param("s", $email);
       $stmt->execute();
-      $result = $stmt->get_result();
-
-        if($result->num_rows === 0){
+      //$result = $stmt->get_result();                    //requires mysqlnd
+      $result = get_result( $stmt );
+      /* may not be needed
+        while ( $DATA = array_shift( $RESULT ) ) {
+          // Do stuff with the data
+        }
+      */
+      if($result->num_rows === 0){
 
 
 
           //redirect back to the engine
           return false ;
-        }
-          while($row = $result->fetch_assoc()) {
+      }
+
+      while($row = $result->fetch_assoc()) {
             $id = $row['id'];
             $names = $row['email'];
             $passHash = $row['password'];
-        }
+      }
 
-        if (password_verify($password, $passHash)){
+      if (password_verify($password, $passHash)){
           //the password is correct
           $_SESSION['userid'] = $id ;
 
           return $id ;
-        }else{
-          //the password is incorrect
+      }else{
+        //the password is incorrect
 
 
-          return false ;
-        }
+        return false ;
+      }
 
       $stmt->close();
     }
