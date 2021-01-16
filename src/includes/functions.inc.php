@@ -59,8 +59,8 @@ function register(){
       $stmt = $mysqli->prepare("SELECT * FROM users WHERE email = ?");
       $stmt->bind_param("s", $email);
       $stmt->execute();
-      //$result = $stmt->get_result();                    //requires mysqlnd
-      $result = get_result( $stmt );
+      $result = $stmt->get_result();                    //requires mysqlnd
+      //$result = get_result( $stmt );
       /* may not be needed
         while ( $DATA = array_shift( $RESULT ) ) {
           // Do stuff with the data
