@@ -30,7 +30,7 @@ class GameManager {
 
 
   public function registerNewUser($name, $password){
-    require_once("classes/config.php");
+    require_once("config.php");
 
     //We need to hash the password with PHP
     $password = password_hash($password, PASSWORD_DEFAULT);
@@ -49,7 +49,7 @@ class GameManager {
 
     //redirect them to login.php
     //login.php should have the exact same form as index.php
-    header('Location: login.php');
+    header('Location: ../login.php');
 
   }
 

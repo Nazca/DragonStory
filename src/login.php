@@ -33,7 +33,7 @@ require_once("classes/DisplayManager.php");
 								<span class="image main"><img src="" alt="Dragon Hatchery Image" /></span>
 								<h2>Login Here</h2>
 								<p>
-                  <form action="engine.php?login=true" method="POST" name="command" value="login">
+                  <form action="includes/login.inc.php" method="POST" name="command" value="login">
 
                     <input type="text" name="email" placeholder="Email..." /><br />
                     <input type="password" name="password" placeholder="Password..." /><br />

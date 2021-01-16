@@ -48,8 +48,8 @@ if (isset($_GET['logout'])){
   $inputController->login();
   exit();
 }elseif (isset($_GET['register'])){
-  $inputController->register() ;
-  exit();
+  //$inputController->register() ;
+  die('Registration is now handled procedurally so that the engine can expect a logged in user.');
 }else{
 
 }

@@ -7,7 +7,7 @@ require_once("classes/DisplayManager.php");
 -->
 <html>
 	<head>
-		<title>Generic Steller Page</title>
+		<title>Dragon Story Registration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@ require_once("classes/DisplayManager.php");
 					<header id="header">
 						<h1>Register</h1>
 						<p>Register here to get your very own magical dragon.</p>
-						
+
 					</header>
 
 				<!-- Main -->
@@ -33,7 +33,7 @@ require_once("classes/DisplayManager.php");
 								<span class="image main"><img src="" alt="Dragon Hatchery Image" /></span>
 								<h2>Register Here</h2>
 								<p>
-									<form action="engine.php?register=true" method="POST" name="command" value="register">
+									<form action="includes/register.inc.php" method="POST" name="command" value="register">
 
 										<input type="text" name="email" placeholder="Email..." /><br />
 										<input type="text" name="email2" placeholder="Email again..." /><br />

@@ -158,7 +158,7 @@
                     -->
                     <p>
                       <p>
-      									<form action="engine.php?login=true" method="POST" name="command" value="login">
+      									<form action="includes/login.inc.php" method="POST" name="command" value="login">
 
       										<input type="text" name="email" placeholder="Email..." /><br />
       										<input type="password" name="password" placeholder="Password..." /><br />
