@@ -42,6 +42,7 @@
 										<li>Removed learn more button in footer.php</li>
 										<li>Updated text on the index</li>
 										<li>Created users table in SQL database</li>
+										<li>Users can now log in and register - registration adds you to the email list for further updates.</li>
 									</ul>
 								</p>
 
