@@ -19,7 +19,7 @@ $loggedIn; //set a flag to see whether or not we are logged in.
 
 
 $userManager = new UserManager();
-
+//NOTE: This code will need removed. it's for debug purposes only
 if ($userManager->userLoggedIn() === true){
   //we are logged in.
   echo "We are logged in."  . $_SESSION['userid'];
@@ -27,8 +27,11 @@ if ($userManager->userLoggedIn() === true){
 }else{
   //we are not logged in
   echo "We are not logged in."; // . $_SESSION['userid'];
-  echo "<Br /><a href=\"engine.php?login=true\">Login as Nazca</a>";
+  echo "<br />We should log in from index.php" ;
+  //echo "<Br /><a href=\"engine.php?login=true\">Login as Nazca</a>";
+
 }
+//NOTE: End code removal.
 
 
 

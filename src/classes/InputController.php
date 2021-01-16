@@ -21,7 +21,9 @@ class InputController {
   //we need a method that allows us to communicate with the GameManager class
   public function login(){
     if (isset($_GET['login'])){
-      $_SESSION['userid'] = 1 ;
+
+      //instead of just setting the $_SESSION['userid'] to 1 (the first user) we need to request a login from the game manager which will then access the database for us.
+      //$_SESSION['userid'] = 1 ;
 
       //we need to redirect to engine.php so that we will display updated information.
       //at this point in time engine.php is displaying debug information as coding has not begun for the DisplayManager

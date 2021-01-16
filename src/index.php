@@ -157,7 +157,7 @@
                      calling the classes for checking the users info and returning a successful log in or not.
                     -->
                     <p>
-                      <form action="engine.php" method="POST" />
+                      <form action="engine.php?login=true" method="POST" />
                       <table>
                         <tr>
                           <td>Email:</td><td><input type="text" name="email" /></td>
