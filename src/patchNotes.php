@@ -39,6 +39,7 @@
 									<ul>
 										<li>Fixed mysqlnd 500 error</li>
 										<li>Downgraded to php 7.2</li>
+										<li>Added error handler for blank login form submission.</li>
 									</ul>
 								</p>
 								<p>
