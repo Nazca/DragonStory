@@ -23,6 +23,27 @@ class DisplayManager {
       echo "We are logged in. UID:"  . $_SESSION['userid'];
       echo "<br /><a href=\"engine.php?logout=true\">Logout</a>";
       echo "<br /><a href=\"engine.php\">Engine</a>";
+      ?>
+
+      <!--this is placeholder html for gamestate view -->
+      <html>
+        <body>
+          <center>
+            <br /><br /><br />
+            <h3>Dragon Story</h3>
+            <p>
+              This page is still under construction.  Don't worry we have your email and will email you when things heat up a little bit.  You can press the blue log out button to log out and the blue engine button to simulate an engine action.
+            </p>
+          </center>
+        </body>
+      </html>
+
+
+
+
+      <?php
+    }else{
+      header('Location: ../login.php');
     }
   }
 
