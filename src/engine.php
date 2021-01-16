@@ -2,6 +2,7 @@
 require_once("classes/DisplayManager.php");
 require_once("classes/GameManager.php");
 require_once("classes/InputController.php");
+require_once("classes/UserManager.php");
 //this is the main file called when the user is viewing, giving input, or otherwise monitering the gamestate.
 
 //it's possible that we've ended up here without sending any log in information.
@@ -17,33 +18,35 @@ $loggedIn; //set a flag to see whether or not we are logged in.
 
 
 
-if (isset($_SESSION['userid']) && $_SESSION['userid'] != null && $_SESSION['userid'] != 0){
-  //We are definitely logged in!
-  $loggedIn = true ;
+$userManager = new UserManager();
+
+if ($userManager->userLoggedIn() === true){
+  //we are logged in.
+  echo "We are logged in."  . $_SESSION['userid'];
+  echo "<br /><a href=\"engine.php?logout=true\">Logout</a>";
 }else{
-  //we are definitely not logged in.
-  $loggedIn = false ;
+  //we are not logged in
+  echo "We are not logged in."; // . $_SESSION['userid'];
+  echo "<Br /><a href=\"engine.php?login=true\">Login as Nazca</a>";
 }
 
 
 
-//now we can do two seperate things based on our flag of $loggedIn
-//var_dump($_POST);
 
 
 //invoke the input Controller
 
 $inputController = new InputController();
 
-//method login() of class InputController expects arguments email and password
-
-if ($inputController->login($_POST['email'], $_POST['password']) == true){
-  echo "we logged in";
-  echo "<br />" . $_SESSION['userid'];
-}else{
-  echo "log in failed";
-  echo "<br />We don't have a session userid to echo";
+if (isset($_GET['logout'])){
+  $inputController->logout() ;
 }
+
+if (isset($_GET['login'])){
+  $inputController->login();
+}
+
+
 
 
 ?>

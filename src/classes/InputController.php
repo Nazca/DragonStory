@@ -19,28 +19,32 @@ class InputController {
     return $input ;
   }
   //we need a method that allows us to communicate with the GameManager class
-  public function login($email, $password){
-    //Lets gather user input, clean it, then send it to the game manager.
-    $email = $this->clean($email);
-    $password = $this->clean($password);
+  public function login(){
+    if (isset($_GET['login'])){
+      $_SESSION['userid'] = 1 ;
 
-    if (!($password) || !($email)){
+      //we need to redirect to engine.php so that we will display updated information.
+      //at this point in time engine.php is displaying debug information as coding has not begun for the DisplayManager
+      //otherwise the display manager would be invoked to display the gamestate.
+      header("Location: engine.php");
+      return true ;
+    }else{
+      echo "failed to log in a user.";
       return false ;
     }
+  }
 
-    //Notify the GameManager we want to log in with the information we have now cleaned
+  public function logout(){
+    if (isset($_GET['logout']) && $_GET['logout'] == "true"){
+      $_SESSION['userid'] = 0 ;
+      unset($_SESSION['userid']);
 
-    //we notify the game manager by instantiating it here and calling a method for the command we want to run.
-    //the method names should be the same from InputController to GameManager
-
-    $GameManager = new GameManager();
-
-    if ($GameManager->login($email, $password) == true){
+      //we need to redirect to index.php since they are now logged out.
+      header("Location: index.php");
       return true ;
     }else{
       return false ;
     }
-
   }
 
 
