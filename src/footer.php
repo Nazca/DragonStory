@@ -29,7 +29,7 @@
         <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
       </ul>
     </section>
-    <p class="copyright">&copy; John Newell's Dragon Story. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+    <p class="copyright">&copy; John Newell's Dragon Story. Original template design: <a href="https://html5up.net">HTML5 UP</a>.</p>
   </footer>
 
 </div>

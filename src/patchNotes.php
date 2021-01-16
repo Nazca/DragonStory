@@ -40,6 +40,7 @@
 										<li>Removed unfunctional counters in index.php</li>
 										<li>Players can now register and log in.  Registering will add you to the email list for further updates.</li>
 										<li>Removed learn more button in footer.php</li>
+										<li>Updated text on the index</li>
 
 
 									</ul>
