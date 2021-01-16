@@ -1,11 +1,14 @@
 <!doctype html>
 <!--
 	John Newell's Dragon Story
+  This page expects a user to be logged out.
+
+  Logged in users should be redirected to engine.php
 -->
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>0.01002</title>
+  <title>Dragon Story Alpha</title>
 
   <meta name="description" content="Get a dragon egg and raise your own dragon in Dragon Story">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -48,6 +51,7 @@
   						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
   						<h1>Dragon Story</h1>
   						<p>Raise your very own Dragon!<br />
+                <small>Alpha 0.1</small><br />
   						Dragon Story owned and designed by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
   					</header>
 
@@ -56,7 +60,7 @@
   						<ul>
   							<li><a href="#intro" class="active">Top</a></li>
   							<li><a href="#first">Hatchery</a></li>
-  							<li><a href="#second">Register</a></li>
+  							<li><a href="register.php">Register</a></li>
   							<li><a href="#cta">Play</a></li>
   						</ul>
   					</nav>
@@ -112,7 +116,7 @@
   									<h2>Register</h2>
   									<p>Register an account on this site to raise your new magical best friend! <br />Will yours be cute and cuddly or big and strong?<br />Do you have what it takes to become a Dragon Master?<br />Get one today.</p>
   								</header>
-  								<ul class="statistics">
+  							<!--	<ul class="statistics">
   									<li class="style1">
   										<span class="icon solid fa-code-branch"></span>
   										<strong>0</strong> Dragon Masters
@@ -133,8 +137,8 @@
   										<span class="icon fa-gem"></span>
   										<strong>0</strong> Dragon Deaths
   									</li>
-  								</ul>
-  								<p class="content">Three Dragon Eggs were found, one red, one yellow, one blue.  After study'ing them for years it was decided that the Red be hatched male and the yellow and blue be hatched female.  Dragons born a boy are incubated in a hotter temperature than dragons born female in a more mild climate.  In the wild, an alpha male dragon would choose a strong egg and the males would take turns heating it with their fire.  The dragon in that egg would be born male.  Today we do it with an oven.</p>
+  								</ul> -->
+  								<p class="content">Once you register an account you will be given a free dragon egg.  You may choose a Red, Yellow, or Blue egg.  If you take care of the egg properly it will hatch into a baby dragon of the respective color.  Dragons need lots of attention and love! So, please only adopt a dragon if you can take care of it.  If a dragon is left alone with no care it will eventually run away.  If no one adopts it, it will die in the wild.  <br /><br />Come get your new soul bind!</p>
   								<footer class="major">
   									<ul class="actions special">
   										<li><a href="register.php" class="button">Register</a></li>
@@ -153,24 +157,18 @@
                      calling the classes for checking the users info and returning a successful log in or not.
                     -->
                     <p>
-                      <form action="login.php" method="POST" />
-                      <table>
-                        <tr>
-                          <td>Email:</td><td><input type="text" name="email" /></td>
-                        </tr>
-                        <tr>
-                          <td>Password:</td><td><input type="password" name="password" /></td>
-                        </tr>
-                        <tr>
-                          <td><footer class="major">
-          									<ul class="actions special">
-          										<a href="register.php" class="button">Register</a></td><td>
-          										<input type="submit" value="Submit" class="button primary" />
-          									</ul>
-          								</footer></td>
-                        </tr>
-                      </table>
-                    </form>
+                      <p>
+      									<form action="includes/login.inc.php" method="POST" name="command" value="login">
+
+      										<input type="text" name="email" placeholder="Email..." /><br />
+      										<input type="password" name="password" placeholder="Password..." /><br />
+
+      										<input type="submit" name="submit" value="Login" />
+
+
+
+      									</form>
+      								</p>
                     </p>
   								</header>
 

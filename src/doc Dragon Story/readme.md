@@ -1,6 +1,12 @@
 [Dragon Story homepage](https://dragonstory.hamfingered.com/) | [Documentation
 table of contents](TOC.md)
 
+### index.php
+I've decided that it is safe to expect the user to not be logged in at index.php
+
+A loggin in user can easily be redirected to engine.php where we can expect all users to be logged in.
+
+
 # The Process
 
 The code used on the live production server is the code stored on the main branch at https://github.com/Nazca/DragonStory.git

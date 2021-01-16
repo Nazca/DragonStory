@@ -10,7 +10,7 @@
 ///
 
 /*
-This is the model is should represent game data operations and rulesets.  It manages the behavior and data of the application,
+This is the model it should represent game data operations and rulesets.  It manages the behavior and data of the application,
 responds to requests about it's application data and responds to instructions to change state.  This file governs all game data
 and the rules applied to a users ability to update that data. This file will monitor the state of it's own data and govern the transformation
 of all of that data.
@@ -20,11 +20,56 @@ This class will access the SQL database with a seperate Data Access Object proba
 */
 class GameManager {
   //properties
-  public $user ; //the database id of the currently logged in user. 0 or null if no user is logged in.
-  public $username //String username to show what user is logged in;
+  public $userid ;
+  public $screenName ; //the Screen name of the currently logged in player
 
 
-  //get_class_methods
+
+  //public methods
+
+
+
+  public function registerNewUser($name, $password){
+    require_once("../includes/config.inc.php");
+
+    //We need to hash the password with PHP
+    $password = password_hash($password, PASSWORD_DEFAULT);
+
+
+    $mysqli = new mysqli($SQLserver, $SQLuser, $SQLpassword, $SQLdatabase);
+    if($mysqli->connect_error) {
+      exit('Error connecting to database'); //Should be a message a typical user could understand in production
+    }
+
+    $stmt = $mysqli->prepare("INSERT INTO users (email, password) values(?, ?)");
+    $stmt->bind_param("ss", $name, $password);
+    $stmt->execute();
+    //fetching result would go here, but will be covered later
+    $stmt->close();
+
+    //redirect them to login.php
+    //login.php should have the exact same form as index.php
+    header('Location: ../login.php');
+
+  }
+
+  
+
+
+
+  //private methods
+  private function getUID(){
+    if (isset($_SESSION['userid'])){
+      $this->$userid = $_SESSION['userid'];
+      return $this->$userid ;
+    }else{
+      return false ;
+    }
+
+  }
+
+
+
 
 }
  ?>
