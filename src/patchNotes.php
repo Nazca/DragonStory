@@ -41,8 +41,7 @@
 										<li>Players can now register.  Registering will add you to the email list for further updates.</li>
 										<li>Removed learn more button in footer.php</li>
 										<li>Updated text on the index</li>
-
-
+										<li>Created users table in SQL database</li>
 									</ul>
 								</p>
 

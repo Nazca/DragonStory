@@ -13,7 +13,12 @@ require_once("classes/UserManager.php");
 //if they are not logged in and we have no input lets redirect to index.php
 
 session_start(); //this will allow us to use the session to see if a user is logged in or not.
-
+//// DEBUG:
+if (isset($_SESSION['userid'])){
+  //echo $_SESSION['userid'] . "<br />";
+}else{
+  //echo "No userid is set" ;
+}
 $loggedIn; //set a flag to see whether or not we are logged in.
 
 //define the file location
@@ -32,13 +37,9 @@ $userManager = new UserManager();
 
 if ($userManager->userLoggedIn() === true){
   //we are logged in.
-  echo "We are logged in."  . $_SESSION['userid'];
+  echo "We are logged in. UID:"  . $_SESSION['userid'];
   echo "<br /><a href=\"engine.php?logout=true\">Logout</a>";
 }
-
-
-
-
 
 
 //invoke the input Controller

@@ -25,40 +25,102 @@ class GameManager {
 
 
 
-  //get_class_methods
+  //public methods
 
-  private function getUID(){
-    if (isset($_SESSION['userid'])){
-      $this->$userid = $_SESSION['userid'];
+
+
+  public function registerNewUser($name, $password){
+    require_once("classes/config.php");
+
+    //We need to hash the password with PHP
+    $password = password_hash($password, PASSWORD_DEFAULT);
+
+
+    $mysqli = new mysqli($SQLserver, $SQLuser, $SQLpassword, $SQLdatabase);
+    if($mysqli->connect_error) {
+      exit('Error connecting to database'); //Should be a message a typical user could understand in production
     }
+
+    $stmt = $mysqli->prepare("INSERT INTO users (email, password) values(?, ?)");
+    $stmt->bind_param("ss", $name, $password);
+    $stmt->execute();
+    //fetching result would go here, but will be covered later
+    $stmt->close();
+
+    //redirect them to login.php
+    //login.php should have the exact same form as index.php
+    header('Location: login.php');
 
   }
 
-  public function login($email, $password){
+  public function checkLogin($email, $password){
     //this function should check this cleaned information against the databse to see if the user exists.
     //if the user exists it should invoke the DisplayManager with a command to display the home screen with the current logged in user's id as a property.
+
+    $displayManager = new DisplayManager();
 
     if ($email == null || $password == null){
       //there was some sort of error with their login information, return false
       echo "<br />No email or password was sent to the GameManager";
       return false ;
     }else{
+
       //check their login information in the sql database
-      //check code
+      require_once("classes/config.php");
+      $mysqli = new mysqli($SQLserver, $SQLuser, $SQLpassword, $SQLdatabase);
+      if($mysqli->connect_error) {
+        exit('Error connecting to database'); //Should be a message a typical user could understand in production
+      }
 
-      //basic code to set a userid in the session
-      //beware this makes every one me
-      $this->userid = 1 ;
-      $_SESSION['userid'] = 1 ;
+      $stmt = $mysqli->prepare("SELECT * FROM users WHERE email = ?");
+      $stmt->bind_param("s", $email);
+      $stmt->execute();
+      $result = $stmt->get_result();
 
-      return true;
+        if($result->num_rows === 0){
+
+          $displayManager->setError("Your email couldn't be found.");
+
+          //redirect back to the engine
+          header('Location: engine.php');
+          exit();
+        }
+          while($row = $result->fetch_assoc()) {
+            $id = $row['id'];
+            $names = $row['email'];
+            $passHash = $row['password'];
+        }
+
+        if (password_verify($password, $passHash)){
+          //the password is correct
+          $_SESSION['userid'] = $id ;
+          $displayManager->setError("You have logged in successfully");
+        }else{
+          //the password is incorrect
+
+          $displayManager->setError("Your information was incorrect.");
+        }
+
+      $stmt->close();
     }
 
   }
 
-  private function home(){
-    //display the home screen for the player with user id $_SESSION['userid'];
+
+
+  //private methods
+  private function getUID(){
+    if (isset($_SESSION['userid'])){
+      $this->$userid = $_SESSION['userid'];
+      return $this->$userid ;
+    }else{
+      return false ;
+    }
+
   }
+
+
+
 
 }
  ?>

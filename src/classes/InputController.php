@@ -27,13 +27,16 @@ class InputController {
   public function login(){
     if (isset($_GET['login'])){
 
+      $email = $this->clean($_POST['email']);
+      $password = $this->clean($_POST['password']);
       //The fact that get=login is set means we are attempting to log in from index.php
       //we should clean the input, invoke the game manager to access the database
-
+      $gameManager = new GameManager() ;
+      $gameManager->checkLogin($email, $password) ;
 
       return true ;
     }else{
-      echo "failed to log in a user.";
+      echo "Failed to log in a user.";
       return false ;
     }
   }
@@ -65,6 +68,9 @@ class InputController {
       $password = $this->clean($password);
 
 
+      //invoke the game manager to register a new users
+      $gameManager = new GameManager() ;
+      $gameManager->registerNewUser($email, $password);
 
     }else{
       //invoke the displaymanager to display this message
