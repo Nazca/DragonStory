@@ -11,7 +11,7 @@ if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
   //live
   $SQLserver = "localhost" ;
   $SQLuser = "Nazca" ;
-  $SQLpassword = "LedG1090#";
+  $SQLpassword = "LedG1090####";
   $SQLdatabase = "dragonstory";
 }else{
   //localhost
