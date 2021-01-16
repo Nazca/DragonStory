@@ -33,7 +33,7 @@
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
 
-								<h2>Alpha 0.10003 (1/16/2021)</h2>
+								<h1>Alpha 0.10003 (1/16/2021)</h1>
 								<h3>Patch Notes</h3>
 								<p>
 									<ul>
