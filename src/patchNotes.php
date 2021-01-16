@@ -39,12 +39,12 @@
 									<ul>
 										<li>Fixed mysqlnd 500 error</li>
 										<li>Downgraded to php 7.2</li>
-
+									</ul>
 								</p>
 								<p>
 									<h3>Known Issues</h3>
 									<ul>
-										<li>None.</li>
+										<li>No error handlers on registration or login code.</li>
 									</ul>
 								</p>
 
