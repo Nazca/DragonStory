@@ -33,7 +33,8 @@
 							<section id="content" class="main">
 								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
 
-								<h2>Alpha 0.10003 (date)</h2>
+								<h2>Alpha 0.10003 (1/16/2021)</h2>
+								<h1>Patch Notes</h1>
 								<p>
 									<ul>
 										<li>Updated Version to 0.01003 in patch notes, package.  Version identifier in index.php removed.</li>
@@ -43,6 +44,12 @@
 										<li>Updated text on the index</li>
 										<li>Created users table in SQL database</li>
 										<li>Users can now log in and register - registration adds you to the email list for further updates.</li>
+									</ul>
+								</p>
+								<p>
+									<h1>Known Issues</h1>
+									<ul>
+										<li>Error 500 code after logging in or registering.</li>
 									</ul>
 								</p>
 
