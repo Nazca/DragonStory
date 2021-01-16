@@ -138,7 +138,7 @@
   										<strong>0</strong> Dragon Deaths
   									</li>
   								</ul> -->
-  								<p class="content">Three Dragon Eggs were found, one red, one yellow, one blue.  After study'ing them for years it was decided that the Red be hatched male and the yellow and blue be hatched female.  Dragons born a boy are incubated in a hotter temperature than dragons born female in a more mild climate.  In the wild, an alpha male dragon would choose a strong egg and the males would take turns heating it with their fire.  The dragon in that egg would be born male.  Today we do it with an oven.</p>
+  								<p class="content">Once you register an account you will be given a free dragon egg.  You may choose a Red, Yellow, or Blue egg.  If you take care of the egg properly it will hatch into a baby dragon of the respective color.  Dragons need lots of attention and love! So, please only adopt a dragon if you can take care of it.  If a dragon is left alone with no care it will eventually run away.  If no one adopts it, it will die in the wild.  <br /><br />Come get your new soul bind!</p>
   								<footer class="major">
   									<ul class="actions special">
   										<li><a href="register.php" class="button">Register</a></li>
