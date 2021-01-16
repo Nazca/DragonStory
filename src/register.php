@@ -1,3 +1,6 @@
+<?php
+require_once("classes/DisplayManager.php");
+?>
 <!DOCTYPE HTML>
 <!--
 	This file is part of the Dragon Story Project
@@ -19,6 +22,7 @@
 					<header id="header">
 						<h1>Register</h1>
 						<p>Register here to get your very own magical dragon.</p>
+						
 					</header>
 
 				<!-- Main -->

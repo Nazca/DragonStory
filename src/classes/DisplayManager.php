@@ -11,10 +11,23 @@ This Display Manager governs the visualization of the data thatis passed to it b
 */
 class DisplayManager {
   //properties
+  private $error ;
 
 
+  //methods
+  public function setError($text){
+    $_SESSION['error'] = $text ;
+  }
 
-  //get_class_methods
+
+  public function displayError(){
+    if (isset($_SESSION['error'])){
+        echo "<p><font color=red>" . $_SESSION['error'] . "</font></p>";
+        $_SESSION['error'] = null ;
+        unset($_SESSION['error']);
+    }
+
+  }
 
 }
  ?>

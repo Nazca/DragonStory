@@ -15,23 +15,27 @@ require_once("classes/UserManager.php");
 session_start(); //this will allow us to use the session to see if a user is logged in or not.
 
 $loggedIn; //set a flag to see whether or not we are logged in.
+
+//define the file location
+define('__ROOT__', dirname(dirname(__FILE__)));
+
+
+
 $inputController = new InputController();
+$displayManager  = new DisplayManager();
+
+$displayManager->displayError();
 
 
 
 $userManager = new UserManager();
-//NOTE: This code will need removed. it's for debug purposes only
+
 if ($userManager->userLoggedIn() === true){
   //we are logged in.
   echo "We are logged in."  . $_SESSION['userid'];
   echo "<br /><a href=\"engine.php?logout=true\">Logout</a>";
-}else{
-  //we are not logged in
-  //redirect to index.php by forcing a logout.
-  $inputController->logout() ;
-
 }
-//NOTE: End code removal.
+
 
 
 
@@ -47,6 +51,10 @@ if (isset($_GET['logout'])){
 
 if (isset($_GET['login'])){
   $inputController->login();
+}
+
+if (isset($_GET['register'])){
+  $inputController->register() ;
 }
 
 
