@@ -34,7 +34,7 @@
 								<center><span class="image main"><a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dragonstory.hamfingered.com/">Live</a></span></center>
 
 								<h2>Alpha 0.10003 (1/16/2021)</h2>
-								<h1>Patch Notes</h1>
+								<h3>Patch Notes</h3>
 								<p>
 									<ul>
 										<li>Updated Version to 0.01003 in patch notes, package.  Version identifier in index.php removed.</li>
@@ -47,7 +47,7 @@
 									</ul>
 								</p>
 								<p>
-									<h1>Known Issues</h1>
+									<h3>Known Issues</h3>
 									<ul>
 										<li>Error 500 code after logging in or registering.</li>
 									</ul>
