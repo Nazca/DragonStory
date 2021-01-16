@@ -2,7 +2,7 @@
 session_start();
 require('functions.inc.php');
 
-if (!isset($_POST['email'] || !isset($_POST['password']))){
+if (!isset($_POST['email']) || !isset($_POST['password'])){
   //user didn't fill out the fields
   header('location: ../login.php');
   exit();
