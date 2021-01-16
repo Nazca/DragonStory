@@ -62,8 +62,8 @@
 										<li>Users can now log in and register - registration adds you to the email list for further updates.</li>
 									</ul>
 								</p>
+								<h3>Known Issues</h3>
 								<p>
-									<h3>Known Issues</h3>
 									<ul>
 										<li>Error 500 code after logging in or registering.</li>
 									</ul>
