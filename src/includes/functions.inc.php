@@ -1,7 +1,7 @@
 <?php
 require_once("../classes/GameManager.php");
 require_once("../classes/InputController.php");
-require_once("../classes/iimysqli_result.php");
+
 
 
 
