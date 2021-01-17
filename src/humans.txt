@@ -23,3 +23,5 @@
     Stellar Template by AJ
 
     MVC Model PHP code by John Newell www.hamfingered.com
+
+    Dragon Story by John Newell dragonstory.hamfingered.com

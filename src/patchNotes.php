@@ -45,7 +45,7 @@
 								<p>
 									<h3>Known Issues</h3>
 									<ul>
-										<li>No error handlers on registration or login code.</li>
+										<li>None.</li>
 									</ul>
 								</p>
 
