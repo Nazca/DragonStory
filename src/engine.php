@@ -36,7 +36,7 @@ if (isset($_GET['logout'])){
   exit();
 }elseif (isset($_GET['login'])){
   //$inputController->login();
-  die('Login is now handled procedurally so that the engine can expect a logged in uyser.');
+  die('Login is now handled procedurally so that the engine can expect a logged in user.');
 }elseif (isset($_GET['register'])){
   //$inputController->register() ;
   die('Registration is now handled procedurally so that the engine can expect a logged in user.');
