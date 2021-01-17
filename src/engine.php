@@ -13,12 +13,6 @@ require_once("classes/UserManager.php");
 //if they are not logged in and we have no input lets redirect to index.php
 
 session_start(); //this will allow us to use the session to see if a user is logged in or not.
-//// DEBUG:
-if (isset($_SESSION['userid'])){
-  //echo $_SESSION['userid'] . "<br />";
-}else{
-  //echo "No userid is set" ;
-}
 $loggedIn; //set a flag to see whether or not we are logged in.
 
 //define the file location
@@ -31,10 +25,6 @@ $displayManager  = new DisplayManager();
 $gameManager = new GameManager();
 
 $displayManager->displayError();
-
-
-
-
 
 
 //invoke the input Controller
@@ -55,10 +45,5 @@ if (isset($_GET['logout'])){
 }
 
 $displayManager->displayHome() ;
-
-
-
-
-
 
 ?>
