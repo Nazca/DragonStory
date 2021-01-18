@@ -32,17 +32,17 @@ class DisplayManager {
             <br /><br /><br />
             <h3>Dragon Story</h3>
             <p>
-              This page is still under construction.  Don't worry we have your email and will email you when things heat up a little bit.  You can press the blue log out button to log out and the blue engine button to simulate an engine action.
+              This page is still under construction.  Don't worry we have your email and will email you when things heat up a little bit.<br />
+              You can press the blue log out button to log out and the blue engine button to simulate an engine action.
             </p>
             <img src="../images/cartoon_eggs.jpg" />
           </center>
         </body>
       </html>
-
-
-
-
+      <!-- End placeholder html for gamestate view -->
       <?php
+
+
     }else{
       header('Location: ../login.php');
     }

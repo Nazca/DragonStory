@@ -46,7 +46,8 @@ function register(){
 
     if ($email == null || $password == null){
       //there was some sort of error with their login information, return false
-      die('no uid or pwd sent');
+      header ('location: ../login.php');
+      exit();
     }else{
 
       //check their login information in the sql database

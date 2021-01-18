@@ -1,56 +1,103 @@
-<?php
-require_once("classes/DisplayManager.php");
-?>
-<!DOCTYPE HTML>
-<!--
-	This file is part of the Dragon Story Project
--->
+<?php session_start(); ?><!DOCTYPE html>
 <html>
-	<head>
-		<title>Dragon Story Registration</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Dragon Story Registration</title>
+    <!-- meta tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+    <!-- end meta tags -->
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- imported font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Register</h1>
-						<p>Register here to get your very own magical dragon.</p>
 
-					</header>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+      <!-- usage: font-family: 'Potta One', cursive; -->
 
-				<!-- Main -->
-					<div id="main">
+    <!-- end imported font -->
 
-						<!-- Content -->
-							<section id="content" class="main">
-								<span class="image main"><img src="" alt="Dragon Hatchery Image" /></span>
-								<h2>Register Here</h2>
-								<p>
-									<form action="includes/register.inc.php" method="POST" name="command" value="register">
+    <!-- linking to jquery to make the dragon egg shake -->
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- end linking to jquery to make the dragon egg shake. -->
 
-										<input type="text" name="email" placeholder="Email..." /><br />
-										<input type="text" name="email2" placeholder="Email again..." /><br />
-										<br />
-										<input type="password" name="password" placeholder="Password..." /><br />
-										<input type="password" name="password2" placeholder="Password again..." /><br />
-										<input type="submit" name="submit" value="Register" />
+    <link rel="stylesheet" href="/css/style.css">
 
 
 
-									</form>
-								</p>
+  </head>
+  <body>
+      <!-- body code here -->
 
-							</section>
+        <nav>
+          <div>
+          <ul>
+            <div class="navWrapper">
+              <li><a href="index.php">Dragon Story</a></li>
+              <li><a href="register.php">Register</a></li>
+            </div>
+          </ul>
+          </div>
+        </nav>
 
-					</div>
+      <div class="wrapper">
+        <h1 class="title">Dragon Story</h1>
 
-			<?php
-				require('footer.php');
-			 ?>
+        <div id="egg">
+          <!-- an interactable egg -->
+          <interactive>
+            <img src="images/egg.png" alt="Dragon Egg" id="dragonEgg" class="toggle" onclick="document.getElementById('audio').play();">
+            <!-- dragon egg jquery -->
+              <script>
+                $("#dragonEgg").click(function() {
+                $( ".toggle" ).effect( "shake", { times:3 }, 500);
+                });
+              </script>
+              <!-- end dragon egg jquery -->
+
+
+
+              <!-- audio -->
+                <audio id="audio">
+                  <source src="sound/purring.mp3" />
+                  You're browser does not support HTML5 - please update your browser.
+                </audio>
+              <!-- end audio -->
+
+
+              <input type="submit" name="stopSound" value="Stop Sound" onclick="document.getElementById('audio').pause();" />
+          </interactive>
+
+        </div>
+
+        <div id="content">
+          <!-- text content -->
+          <div class="login">
+            <form action="includes/register.inc.php" method="POST" name="command" value="login">
+              <input type="text" name="email" placeholder="Email..." /><br />
+              <input type="text" name="email2" placeholder="Email..." /><br />
+              <input type="password" name="password" placeholder="Password..."><br />
+              <input type="password" name="password2" placeholder="Password..."><br />
+              <input type="submit" name="submit" value="Register" />
+            </form>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- end body code here -->
+
+      <!-- begin footer code -->
+      <div class="footer">
+        <ul>
+          <li>Coded and designed by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell<a></li>
+        </ul>
+      </div>
+
+  </body>
+</html>
