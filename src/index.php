@@ -68,7 +68,9 @@
               <!-- end audio -->
 
 
-              <input type="submit" name="stopSound" value="Stop Sound" onclick="document.getElementById('audio').pause();" />
+                <input id ="stopSound" type="submit" name="stopSound" value="Stop Sound" onclick="document.getElementById('audio').pause(); document.getElementById('stopSound').style.display = 'block' ;" />
+                <input id ="stopSound" type="submit" name="stopSound" value="Stop Sound" onclick="var foo = document.getElementById('stopSound'); foo.style.display = 'block' ;" />
+
           </interactive>
 
         </div>
