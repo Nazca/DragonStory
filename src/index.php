@@ -1,182 +1,90 @@
-<!doctype html>
-<!--
-	John Newell's Dragon Story
-  This page expects a user to be logged out.
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dragon Story Alpha 0.2</title>
+    <!-- meta tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+    <!-- end meta tags -->
 
-  Logged in users should be redirected to engine.php
--->
-<html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Dragon Story Alpha</title>
+    <!-- imported font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 
-  <meta name="description" content="Get a dragon egg and raise your own dragon in Dragon Story">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-  <meta property="og:title" content="Dragon Story">
-  <meta property="og:type" content="Raise your own Dragon game">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+      <!-- usage: font-family: 'Potta One', cursive; -->
 
-  <meta property="og:url" content="dragonstory.hamfingered.com">
-  <meta property="og:image" content="">
+    <!-- end imported font -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <!-- linking to jquery to make the dragon egg shake -->
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- end linking to jquery to make the dragon egg shake. -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <link rel="stylesheet" href="/css/style.css">
 
 
 
+  </head>
+  <body>
+      <!-- body code here -->
 
-  <!-- Add your site or application content here -->
+        <nav>
+          <div>
+          <ul>
+            <div class="navWrapper">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Dragon Story</a></li>
+              <li><a href="#">Register</a></li>
+            </div>
+          </ul>
+          </div>
+        </nav>
 
+      <div class="wrapper">
+        <h1 class="title">Dragon Story</h1>
 
-
-
-
-
-  <body class="is-preload">
-
-  		<!-- Wrapper -->
-  			<div id="wrapper">
-
-  				<!-- Header -->
-  					<header id="header" class="alt">
-  						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
-  						<h1>Dragon Story</h1>
-  						<p>Raise your very own Dragon!<br />
-                <small>Alpha 0.1</small><br />
-  						Dragon Story owned and designed by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell</a></p>
-  					</header>
-
-  				<!-- Nav -->
-  					<nav id="nav">
-  						<ul>
-  							<li><a href="#intro" class="active">Top</a></li>
-  							<li><a href="#first">Hatchery</a></li>
-  							<li><a href="register.php">Register</a></li>
-  							<li><a href="#cta">Play</a></li>
-  						</ul>
-  					</nav>
-
-  				<!-- Main -->
-  					<div id="main">
-
-  						<!-- Introduction -->
-  							<section id="intro" class="main">
-  								<div class="spotlight">
-  									<div class="content">
-  										<header class="major">
-  											<h2>Dragon Story</h2>
-  										</header>
-  										<p>A game where you raise your dragon!</p>
-  									</div>
-  									<span class="image"><img src="images/egg.png" alt="" /></span>
-  								</div>
-  							</section>
-
-  						<!-- First Section -->
-  							<section id="first" class="main special">
-  								<header class="major">
-  									<h2>Dragon Hatchery</h2>
-  								</header>
-  								<ul class="features">
-  									<li>
-  										<h2><img src="images/redDragon.jpg" width="250" height="250" /></h2>
-  										<h3>Western Dragon</h3>
-  										<p>Hearty, tough, and strong flyers - western dragons are the dragons for those who want mounts.</p>
-  									</li>
-  									<li>
-  										<h2><img src="images/blueDragon.jpg" width="250" height="250" /></h2>
-  										<h3>Northern Dragon</h3>
-  										<p>Sleek, slender, and fast northern dragons are often used to race!</p>
-  									</li>
-  									<li>
-  										<h2><img src="images/yellowDragon.jpg" width="250" height="200" /></h2>
-  										<h3>Eastern Dragon</h3>
-  										<p>Eastern Dragons are small, calm, cuddly, cute, and friendly!  Get yours today!</p>
-  									</li>
-  								</ul>
-  								<footer class="major">
-  									<ul class="actions special">
-  										<li><a href="hatchery.php" class="button">Shop</a></li>
-  									</ul>
-  								</footer>
-  							</section>
-
-  						<!-- Second Section -->
-  							<section id="second" class="main special">
-  								<header class="major">
-  									<h2>Register</h2>
-  									<p>Register an account on this site to raise your new magical best friend! <br />Will yours be cute and cuddly or big and strong?<br />Do you have what it takes to become a Dragon Master?<br />Get one today.</p>
-  								</header>
-  							<!--	<ul class="statistics">
-  									<li class="style1">
-  										<span class="icon solid fa-code-branch"></span>
-  										<strong>0</strong> Dragon Masters
-  									</li>
-  									<li class="style2">
-  										<span class="icon fa-folder-open"></span>
-  										<strong>0</strong> Eggs Hatched
-  									</li>
-  									<li class="style3">
-  										<span class="icon solid fa-signal"></span>
-  										<strong>0</strong> Dragons Raised
-  									</li>
-  									<li class="style4">
-  										<span class="icon solid fa-laptop"></span>
-  										<strong>0</strong> Dragons Adopted
-  									</li>
-  									<li class="style5">
-  										<span class="icon fa-gem"></span>
-  										<strong>0</strong> Dragon Deaths
-  									</li>
-  								</ul> -->
-  								<p class="content">Once you register an account you will be given a free dragon egg.  You may choose a Red, Yellow, or Blue egg.  If you take care of the egg properly it will hatch into a baby dragon of the respective color.  Dragons need lots of attention and love! So, please only adopt a dragon if you can take care of it.  If a dragon is left alone with no care it will eventually run away.  If no one adopts it, it will die in the wild.  <br /><br />Come get your new soul bind!</p>
-  								<footer class="major">
-  									<ul class="actions special">
-  										<li><a href="register.php" class="button">Register</a></li>
-  									</ul>
-  								</footer>
-  							</section>
-
-  						<!-- Get Started -->
-  							<section id="cta" class="main special">
-  								<header class="major">
-  									<h2>Log In</h2>
-  									<!--
-                     This is a fairly ugly table should work and look as intended.
-
-                     It's designed to take user login input and POST it to login.php which will handle
-                     calling the classes for checking the users info and returning a successful log in or not.
-                    -->
-                    <p>
-                      <p>
-      									<form action="includes/login.inc.php" method="POST" name="command" value="login">
-
-      										<input type="text" name="email" placeholder="Email..." /><br />
-      										<input type="password" name="password" placeholder="Password..." /><br />
-
-      										<input type="submit" name="submit" value="Login" />
+        <div id="egg">
+          <!-- an interactable egg -->
+          <interactive>
+            <img src="images/egg.png" alt="Dragon Egg" id="dragonEgg" class="toggle" onclick="document.getElementById('audio').play();">
+            <!-- dragon egg jquery -->
+              <script>
+                $("#dragonEgg").click(function() {
+                $( ".toggle" ).effect( "shake", { times:3 }, 500);
+                });
+              </script>
+              <!-- end dragon egg jquery -->
 
 
 
-      									</form>
-      								</p>
-                    </p>
-  								</header>
+              <!-- audio -->
+                <audio id="audio">
+                  <source src="sound/purring.mp3" />
+                  You're browser does not support HTML5 - please update your browser.
+                </audio>
+              <!-- end audio -->
 
-  							</section>
+              <a href="#" onclick="document.getElementById('audio').pause();">Stop sound</a>
+          </interactive>
 
-  					</div>
+        </div>
 
-  				<?php
-          //we need to require the footer.  This is simply so that we can edit the footer once across all php pages.
-            require('footer.php');
-           ?>
+        <div id="content">
+          <!-- text content -->
+          <div class="login">
+            <form action="includes/login.inc.php" method="POST" name="command" value="login">
+              
+            </form>
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- end body code here -->
+  </body>
+</html>
