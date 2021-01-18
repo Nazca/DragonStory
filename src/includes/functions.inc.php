@@ -1,5 +1,5 @@
 <?php
-//require_once("../classes/GameManager.php");
+require_once("../classes/GameManager.php");
 require_once("../classes/InputController.php");
 
 

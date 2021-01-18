@@ -1,7 +1,7 @@
 <?php session_start(); ?><!DOCTYPE html>
 <html>
   <head>
-    <title>Dragon Story Alpha 0.2</title>
+    <title>Dragon Story Registration</title>
     <!-- meta tags -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="UTF-8">
@@ -76,14 +76,14 @@
         <div id="content">
           <!-- text content -->
           <div class="login">
-            <form action="includes/login.inc.php" method="POST" name="command" value="login">
+            <form action="includes/register.inc.php" method="POST" name="command" value="login">
               <input type="text" name="email" placeholder="Email..." /><br />
+              <input type="text" name="email2" placeholder="Email..." /><br />
               <input type="password" name="password" placeholder="Password..."><br />
-              <input type="submit" name="submit" value="Login" />
+              <input type="password" name="password2" placeholder="Password..."><br />
+              <input type="submit" name="submit" value="Register" />
             </form>
-            <form class="registerButton" action="register.php" method="POST" name="command" value="register">
-              <input type="submit" name="register" value="Register" />
-            </form>
+
           </div>
 
         </div>
