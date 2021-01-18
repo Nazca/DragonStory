@@ -2,10 +2,9 @@
 session_start();
 require('functions.inc.php');
 
-if (!isset($_POST['email']) || !isset($_POST['password'])){
+if ($_POST['email'] == null || $_POST['password'] == null){
   //user didn't fill out the fields
-  echo "this code executed" ; die();
-  header('location: ../login.php');
+  header('location: ../index.php');
   exit();
 }
 
@@ -16,6 +15,6 @@ if (($_SESSION['userid'] = checkUserLogin($_POST['email'], $_POST['password'])) 
 }else{
 
   //login failed for some reason go back to login.php
-  header('location: ../login.php');
+  header('location: ../index.php');
   exit();
 }

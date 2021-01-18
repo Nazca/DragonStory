@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php session_start(); ?><!DOCTYPE html>
 <html>
   <head>
     <title>Dragon Story Alpha 0.2</title>
@@ -36,7 +36,6 @@
           <div>
           <ul>
             <div class="navWrapper">
-              <li><a href="#">Login</a></li>
               <li><a href="#">Dragon Story</a></li>
               <li><a href="#">Register</a></li>
             </div>
@@ -68,7 +67,8 @@
                 </audio>
               <!-- end audio -->
 
-              <a href="#" onclick="document.getElementById('audio').pause();">Stop sound</a>
+
+              <input type="submit" name="stopSound" value="Stop Sound" onclick="document.getElementById('audio').pause();" />
           </interactive>
 
         </div>
@@ -77,7 +77,12 @@
           <!-- text content -->
           <div class="login">
             <form action="includes/login.inc.php" method="POST" name="command" value="login">
-              
+              <input type="text" name="email" placeholder="Email..." /><br />
+              <input type="password" name="password" placeholder="Password..."><br />
+              <input type="submit" name="submit" value="Login" />
+            </form>
+            <form class="registerButton" action="register.php" method="POST" name="command" value="register">
+              <input type="submit" name="register" value="Register" />
             </form>
           </div>
 
@@ -86,5 +91,13 @@
 
       </div>
       <!-- end body code here -->
+
+      <!-- begin footer code -->
+      <div class="footer">
+        <ul>
+          <li>Coded and designed by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell<a></li>
+        </ul>
+      </div>
+
   </body>
 </html>

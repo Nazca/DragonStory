@@ -49,11 +49,11 @@ class GameManager {
 
     //redirect them to login.php
     //login.php should have the exact same form as index.php
-    header('Location: ../login.php');
+    header('Location: ../index.php');
 
   }
 
-  
+
 
 
 
