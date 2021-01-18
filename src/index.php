@@ -97,7 +97,7 @@
       <!-- begin footer code -->
       <div class="footer">
         <ul>
-          <li>Coded and designed by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell<a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>Code and design by <a href="https://my.indeed.com/p/johnn-1febyr7">John Newell<a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
         </ul>
       </div>
 
