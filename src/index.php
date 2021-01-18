@@ -1,7 +1,7 @@
 <?php session_start(); ?><!DOCTYPE html>
 <html>
   <head>
-    <title>Dragon Story Alpha 0.2</title>
+    <title>Dragon Story Alpha 0.21</title>
     <!-- meta tags -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="UTF-8">
