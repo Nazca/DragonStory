@@ -62,10 +62,10 @@ nav ul li a:hover {
 }
 
 h1 {
-  font-size: 45px ;
+  font-size: 11px ;
   text-align: center;
   font-family: 'Potta One', cursive;
-  padding: 5px;
+  padding-top: 1px;
   padding-bottom: 15px;
 
 
@@ -119,6 +119,8 @@ input[type=submit]:hover {
 
 .wrapper {
   padding: 30px 30px 20px;
+  padding-top: 0px ;
+
 }
 
 .img {
@@ -155,22 +157,30 @@ input[type=submit]:hover {
 }
 
 
+
+
 .footer {
   position: fixed;
-  width: 100% ;
-  left: 0 ;
+  left: 0;
   bottom: 0;
+  width: 100% ;
   text-align: right ;
   background-color: #0C3D16;
   color: #0A8523;
 
+
+
+
 }
+
+
 
 .footer a {
   text-decoration: none;
   font-size: 14px ;
   font-family: calibri ;
   color: #0EB02E;
+  margin-right: auto ;
 
 }
 
@@ -184,6 +194,13 @@ input[type=submit]:hover {
   nav {
     display: inline-block;
   }
+
+  h1 {
+    font-size: 45px ;
+    padding-top: 5px;
+  }
+
+
 
   #egg {
     width: 60% ;
